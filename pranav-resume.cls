@@ -2,7 +2,7 @@
 %                Identification
 %-------------------------------------------------------------------------------
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{peter-resume}
+\ProvidesClass{pranav-resume}
 \LoadClass{article}
 
 %-------------------------------------------------------------------------------
@@ -126,7 +126,7 @@
 
 % Add option to change the color of the header and titles
 % \define@key[<prefix>]{<family>}{<key>}[<default>]{<function>}
-\define@key{peter-resume.cls}{changecolor}[0, 0, 0]{%
+\define@key{pranav-resume.cls}{changecolor}[0, 0, 0]{%
     \definecolor{main}{RGB}{#1}%
 }
 
@@ -158,8 +158,9 @@
 %                Configuration for colors
 %-------------------------------------------------------------------------------
 % Colors
-\definecolor{darkpurple}{HTML}{6034b1}
+\definecolor{gold}{RGB}{179, 163, 105}
 \definecolor{gray}{HTML}{505050}
+\definecolor{navy}{HTML}{002B45}
 
 
 % ---------------------------------------------------------------------------- %
@@ -192,7 +193,7 @@
         text=white,
         inner sep=0.20 cm,
       ] (nametext) at ([yshift=8mm]name.base) {%
-        \fontsize{40pt}{32pt}\color{white}
+        \fontsize{35pt}{30pt}\color{white}
         {\titlefont #1~}{\titlefont {#2}\par}
         };
     % Occupation
@@ -270,18 +271,18 @@
 % Places a link to a website with a fontawesome logo
 \newcommand{\link}[1]{\href{#1}{\faExternalLink}}
 
-\newcommand*{\sectionstyle}[1]{{\fontsize{18pt}{1em}\color{darkpurple} \titlefont #1}}
+\newcommand*{\sectionstyle}[1]{{\fontsize{14pt}{1em}\color{gold} \titlefont\textbf{#1}}}
 
 % For elements of entry
-\newcommand*{\entrytitlestyle}[1]{{\fontsize{14pt}{1em}\color{black} \titlefont\textbf{#1}}}
+\newcommand*{\entrytitlestyle}[1]{{\fontsize{13pt}{1em}\color{navy} \titlefont\textbf{#1}}}
 \newcommand*{\entrypositionstyle}[1]{{\fontsize{11pt}{1em}\color{gray} \titlefont #1}}
-\newcommand*{\entrydatestyle}[1]{{\fontsize{10pt}{1em}\color{gray} \textit{#1}}}
-\newcommand*{\entrylocationstyle}[1]{{\fontsize{10pt}{1em}\color{gray} \textit{#1}}}
-\newcommand*{\descriptionstyle}[1]{{\fontsize{10pt}{1em}\color{gray} #1}}
+\newcommand*{\entrydatestyle}[1]{{\fontsize{9pt}{1em}\color{gray} \textit{#1}}}
+\newcommand*{\entrylocationstyle}[1]{{\fontsize{9pt}{1em}\color{gray} \textit{#1}}}
+\newcommand*{\descriptionstyle}[1]{{\fontsize{8pt}{1em}\color{gray} #1}}
 
 % For elements of skill
-\newcommand*{\skilltypestyle}[1]{{\fontsize{12pt}{1em}\color{black} \titlefont\textbf{#1}}}
-\newcommand*{\skillsetstyle}[1]{{\fontsize{10pt}{1em}\color{gray} #1}}
+\newcommand*{\skilltypestyle}[1]{{\fontsize{10pt}{1em}\color{navy} \titlefont\textbf{#1}}}
+\newcommand*{\skillsetstyle}[1]{{\fontsize{8pt}{1em}\color{gray} #1}}
 
 % Define a section for CV
 % Usage: \cvsection{<section-title>}

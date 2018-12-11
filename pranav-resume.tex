@@ -1,0 +1,112 @@
+% !TeX program = xelatex
+% Run with XeLaTeX
+
+\documentclass[
+    changecolor={0, 38, 58},
+]{pranav-resume}
+\begin{document}
+\pagestyle{empty} %to remove the page numbers
+
+% This is the header on the first page. It contains your name and contact
+% details.
+% \sep inserts a | between items.
+% You can use FontAwesome icons and use \FAspace after a font awesome icon to
+% insert a predefined horizontal space after a font awesome icon icon.
+\header{Pranav}{Bokey}{
+  Sofwtare Development Engineer}{
+  \faMapMarker \FAspace 1901 Celtic RD. Tallahassee, FL 32317}{
+  \faMobile \FAspace +1 (850) 345-7493 \sep
+  \faEnvelope \FAspace pbokey@gatech.edu \sep
+  \faGlobe \FAspace pbokey.github.io \sep
+  \faLinkedinSquare  \FAspace pbokey \sep
+  \faGithub \FAspace pbokey
+  }
+
+\cvsection{Education}
+\cventry
+  {Bachelor of Science in Computer Science/Minor in Economics; GPA: 3.94}
+  {Georgia Institute of Technology}
+  {Atlanta, Georgia}
+  {August 2016 - May 2020}
+  {
+    \begin{cvitems}
+      \item {Threads: Modelling \& Simulation and Intelligence}
+      \item {Activities: Phi Kappa Psi Fraternity, HackGT Finance Team, Big Data Club}
+      \item {Deans List (2016 - )}
+    \end{cvitems}
+  }
+
+
+\cvsection{Experience}
+\cventry
+  {Software Development Engineering Intern (FireOS OTA Platform Dev)}
+  {Amazon}
+  {Seattle, Washington}
+  {August 2018 - December 2018}
+  {
+    \begin{cvitems}
+     	 \item {Created extension to Java backend service to allow Technical Program Managers to set the scope of their OTA update pool to support External Beta Program for FireOS and Press Release Software (UI and Server created in Flask/Python) }
+	\item {Created self-reporting Website in AngularJS - with a backend in Java - to return distribution of consumer devices in different publicly scoped OTA groups }
+	\item {Met with Technical Program Managers to design and implement ExpectedUpdates function in an existing service so TPMs can troubleshoot app and OS updates to consumer devices (UI created in ReactJS)}
+    \end{cvitems}
+  }
+\cventry
+  {High Frequency Trading Engineering Intern}
+  {Citi}
+  {Irving, Texas}
+  {June 2018 - August 2018}
+  {
+    \begin{cvitems}
+	\item{Created infrastructure to analyze latency on fiber-optic taps in the trading environments}
+	\item{Created automation scripts to aggregate latency and trade data}
+	\item{Tuned a Neural Net model based on trade data to assist high frequency traders internally}
+    \end{cvitems}
+  }
+\cventry
+  {Teaching Assistant - CS 2340 (Objects and Design)}
+  {Georgia Institute of Technology}
+  {Atlanta, Georgia}
+  {January 2018 - May 2018}
+  {
+    \begin{cvitems}
+      \item {Oversee Android Application projects for five student groups}
+      \item {Conducted and evaluated groups progress and code through weekly demos}
+      \item{Held weekly office hours to help students develop their apps}
+    \end{cvitems}
+  }
+
+
+\cvsection{Projects}
+\cventry
+  {github.com/sunny8751/Worth-It}
+  {Worth It, VandyHacks IV}
+	{}
+	{}
+  {
+    \begin{cvitems}
+	\item{Built an Alexa skill written in Python to compare the price of one product in terms of another product}
+	\item{Used technologies: MongoDB, Socket.IO, Flask, Amazon Product API}
+	\item{Implemented the underlying schema and code structure for the Alexa skill}
+    \end{cvitems}
+  }
+\cventry
+  {iOS App + Python API}
+  {Twitter Sentiment Analysis}
+  {}
+  {}
+  {
+    \begin{cvitems}
+	\item{Built a Python API, hosted on Heroku, to parse through HTTP requests}
+	\item{Connected API to iOS/Swift Application which contains the UI to send the request to the backend}
+	\item{Parsed incoming JSON from API and outputted the data in a user-friendly manner}
+    \end{cvitems}
+  }
+
+\cvsection{Skills}
+  \begin{cvskills}
+    \cvskill{Languages:}{Java, Swift, C, C++, Python, HTML, CSS, JavaScript, SQL, C\#, Golang}
+    \cvskill{Frameworks:}{Bootstrap, Flask, Spring, Tomcat, Node, React, Angular, Express, iOS, Android}
+    \cvskill{Databases:}{SQL, NoSQL, PostgreSQL, MySQL, Dynamo}
+  \end{cvskills}
+
+\end{document}
