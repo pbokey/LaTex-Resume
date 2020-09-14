@@ -32,7 +32,7 @@
   Path = fonts/
 }
 % Load cool icons, such as the linked in logo
-\RequirePackage{fontawesome}
+\RequirePackage{fontawesome.otf}
 
 % To alter the style and spacing of titles
 \RequirePackage{titlesec}
